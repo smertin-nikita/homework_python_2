@@ -7,13 +7,12 @@ import json
 FILE_PATH = 'countries.json'
 
 
-
 def founder(file_path):
     with open(file_path, encoding='utf-8') as f:
         objects = ijson.items(f, 'item.name.common')
+        print(f'gen objects size = {sys.getsizeof(objects)}')
         for item in objects:
-            yield item, f"https://en.wikipedia.org/wiki/{item.replace(' ', '_')}"
-        print(sys.getsizeof(objects))
+            yield {item: f"https://en.wikipedia.org/wiki/{item.replace(' ', '_')}"}
 
 
 class Founder:
@@ -21,30 +20,33 @@ class Founder:
         self.file_path = file_path
         with open(file_path, encoding='utf-8') as f:
             self.countries = iter(json.load(f))
-        print(sys.getsizeof(self.countries))
+        print(f'iter jsonload size = {sys.getsizeof(self.countries)}')
 
     def __iter__(self):
         return self
 
     def __next__(self):
         country = next(self.countries)['name']['common']
-        return country, f"https://en.wikipedia.org/wiki/{country.replace(' ', '_')}"
+        return {country: f"https://en.wikipedia.org/wiki/{country.replace(' ', '_')}"}
 
 
 if __name__ == '__main__':
     start_time = time.time()
     founder_class = Founder(FILE_PATH)
-    # for item in founder_class:
-    #     print(item)
+    with open('countries_info.txt', 'w', encoding='utf-8') as f:
+        # founder_class_time = time.time() - founder_class_time
+        for item in founder_class:
+            f.write(f'{item}\n')
     founder_class_time = time.time() - start_time
 
     start_time = time.time()
     founder_gen = founder(FILE_PATH)
-    for item in founder_gen:
-        print(item)
-    founder_gen_time = time.time() - start_time
+    with open('countries_info_2.txt', 'w', encoding='utf-8') as f:
+        for item in founder_gen:
+            f.write(f'{item}\n')
+    founder_time = time.time() - start_time
 
     print(f"class size = {sys.getsizeof(founder_class)}")
     print(f"gen size = {sys.getsizeof(founder_gen)}")
     print(f"class time = {founder_class_time}")
-    print(f"gen time = {founder_gen_time}")
+    print(f"gen time = {founder_time}")
