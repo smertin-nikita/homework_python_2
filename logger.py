@@ -1,10 +1,19 @@
 from datetime import datetime
 
 
-def log(func):
-    def inner(*args, **kwargs):
-        result = func()
-        with open('log.txt', 'w', encoding='utf-8') as f:
-            f.write(f'function {func.func_name} {args} {kwargs} {datetime.today()} {result}')
-        return result
-    return inner
+def log(file_path=None):
+    file_path = file_path or 'log.txt'
+
+    def decorator(func):
+        def inner(*args, **kwargs):
+            result = func(*args)
+            with open(file_path, 'a', encoding='utf-8') as f:
+                f.write(
+                    f'{func} '
+                    f'params: {args} {kwargs} '
+                    f'{datetime.today().strftime("%d-%m-%Y %H:%M:%S")} '
+                    f'return: {result} \n')
+            return result
+        return inner
+    return decorator
+

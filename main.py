@@ -5,6 +5,8 @@ import time
 import ijson
 import json
 
+from logger import log
+
 FILE_PATH = 'countries.json'
 
 
@@ -46,6 +48,7 @@ def get_hash(file_path):
             yield hashlib.md5(line.encode('utf-8')).hexdigest()
 
 
+@log('log.txt')
 def write_to_file(iterable, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         for item in iterable:
@@ -66,5 +69,5 @@ if __name__ == '__main__':
     print(f"gen time = {founder_time}")
 
     # Вывести hash md5 строк
-    for hash in get_hash('countries_info.txt'):
-        print(hash)
+    # for hash in get_hash('countries_info.txt'):
+        # print(hash)
