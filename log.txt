@@ -2,3 +2,53 @@
 <function write_to_file at 0x000001BD829BA1F0> params: (<generator object founder at 0x000001BD82979C80>, 'countries_info_2.txt') {} 15-02-2021 18:53:24 return: None 
 <function write_to_file at 0x000001E9A54DA1F0> params: (<__main__.Founder object at 0x000001E9A4FA7670>, 'countries_info.txt') {} 15-02-2021 18:53:26 return: None 
 <function write_to_file at 0x000001E9A54DA1F0> params: (<generator object founder at 0x000001E9A5499C80>, 'countries_info_2.txt') {} 15-02-2021 18:53:26 return: None 
+<function write_to_file at 0x000001FA70AA51F0> params: (<__main__.Founder object at 0x000001FA70537190>, 'countries_info.txt') {} 15-02-2021 21:21:14 return: None 
+<function write_to_file at 0x000001FA70AA51F0> params: (<generator object founder at 0x000001FA70A59C10>, 'countries_info_2.txt') {} 15-02-2021 21:21:14 return: None 
+<function write_to_file at 0x00000219D74651F0> params: (<__main__.Founder object at 0x00000219D6F17190>, 'countries_info.txt') {} 15-02-2021 21:21:46 return: None 
+<function write_to_file at 0x00000219D74651F0> params: (<generator object founder at 0x00000219D7419C10>, 'countries_info_2.txt') {} 15-02-2021 21:21:46 return: None 
+<function write_to_file at 0x00000184E4DB5AF0> params: (<__main__.Founder object at 0x00000184E4A87F10>, 'countries_info.txt') {} 16-02-2021 22:51:39 return: None 
+<function write_to_file at 0x00000184E4DB5AF0> params: (<generator object founder at 0x00000184E4D59C80>, 'countries_info_2.txt') {} 16-02-2021 22:51:39 return: None 
+<function write_to_file at 0x0000017AD0466AF0> params: (<__main__.Founder object at 0x0000017ACFEE7F10>, 'countries_info.txt') {} 16-02-2021 22:53:22 return: None 
+<function write_to_file at 0x0000017AD0466AF0> params: (<generator object founder at 0x0000017AD0419C80>, 'countries_info_2.txt') {} 16-02-2021 22:53:22 return: None 
+None params: (<__main__.Founder object at 0x0000023BF2887F10>, 'countries_info.txt') {} 16-02-2021 22:56:07 return: None 
+None params: (<generator object founder at 0x0000023BF2B89C80>, 'countries_info_2.txt') {} 16-02-2021 22:56:07 return: None 
+write_to_file params: (<__main__.Founder object at 0x000001CB400F7F10>, 'countries_info.txt') {} 16-02-2021 23:00:13 return: None 
+write_to_file params: (<generator object founder at 0x000001CB40619CF0>, 'countries_info_2.txt') {} 16-02-2021 23:00:13 return: None 
+write_to_file params: (<__main__.Founder object at 0x000002D3BE627F10>, 'countries_info.txt') {} 16-02-2021 23:01:10 return: None 
+write_to_file params: (<generator object founder at 0x000002D3BE919CF0>, 'countries_info_2.txt') {} 16-02-2021 23:01:10 return: None 
+write_to_file params: (<__main__.Founder object at 0x000002B879EC7F10>, 'countries_info.txt') {} 16-02-2021 23:01:21 return: None 
+write_to_file params: (<generator object founder at 0x000002B87A1C9CF0>, 'countries_info_2.txt') {} 16-02-2021 23:01:21 return: None 
+write_to_file params: (<__main__.Founder object at 0x0000028510B67F10>, 'countries_info.txt') {} 16-02-2021 23:01:28 return: None 
+write_to_file params: (<generator object founder at 0x0000028511099CF0>, 'countries_info_2.txt') {} 16-02-2021 23:01:28 return: None 
+write_to_file params: (<__main__.Founder object at 0x0000017949A87F10>, 'countries_info.txt') {} 16-02-2021 23:01:40 return: None 
+write_to_file params: (<generator object founder at 0x0000017949D69CF0>, 'countries_info_2.txt') {} 16-02-2021 23:01:40 return: None 
+write_to_file params: (<__main__.Founder object at 0x00000144C7557F10>, 'countries_info.txt') {} 16-02-2021 23:01:53 return: None 
+write_to_file params: (<generator object founder at 0x00000144C7A59CF0>, 'countries_info_2.txt') {} 16-02-2021 23:01:54 return: None 
+write_to_file params: (<__main__.Founder object at 0x00000287CE137F10>, 'countries_info.txt') {} 16-02-2021 23:02:08 return: None 
+write_to_file params: (<generator object founder at 0x00000287CE659CF0>, 'countries_info_2.txt') {} 16-02-2021 23:02:08 return: None 
+write_to_file params: (<__main__.Founder object at 0x0000023D41087F10>, 'countries_info.txt') {} 16-02-2021 23:02:26 return: None 
+write_to_file params: (<generator object founder at 0x0000023D41369CF0>, 'countries_info_2.txt') {} 16-02-2021 23:02:26 return: None 
+write_to_file params: (<__main__.Founder object at 0x0000024A3EE27F10>, 'countries_info.txt') {} 16-02-2021 23:02:37 return: None 
+write_to_file params: (<generator object founder at 0x0000024A3F119CF0>, 'countries_info_2.txt') {} 16-02-2021 23:02:38 return: None 
+write_to_file params: (<__main__.Founder object at 0x0000029CE7F17F10>, 'countries_info.txt') {} 16-02-2021 23:02:47 return: None 
+write_to_file params: (<generator object founder at 0x0000029CE8419C80>, 'countries_info_2.txt') {} 16-02-2021 23:02:47 return: None 
+write_to_file PARAMS: (<__main__.Founder object at 0x000002D19E557F10>, 'countries_info.txt') {} 16-02-2021 23:03:25 return: None 
+write_to_file PARAMS: (<generator object founder at 0x000002D19EA59C80>, 'countries_info_2.txt') {} 16-02-2021 23:03:25 return: None 
+write_to_file PARAMS: (<__main__.Founder object at 0x000001DE17377F10>, 'countries_info.txt') {} CALL DATETIME16-02-2021 23:05:16 RETURN: None 
+write_to_file PARAMS: (<generator object founder at 0x000001DE17679C10>, 'countries_info_2.txt') {} CALL DATETIME16-02-2021 23:05:16 RETURN: None 
+write_to_file PARAMS - (<__main__.Founder object at 0x000001AC0D627F10>, 'countries_info.txt') {} CALL DATETIME - 16-02-2021 23:05:35 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x000001AC0D8F9C10>, 'countries_info_2.txt') {} CALL DATETIME - 16-02-2021 23:05:35 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000022FC8A47F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:05:48 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000022FC8D39C10>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:05:48 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000022ADA8C7F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:10:36 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000022ADAB9AC10>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:10:36 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000015118A47F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:11:36 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000015118D4AC10>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:11:36 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000022889C27F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:12:15 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000022889F1BB30>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:12:15 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000020B772C7F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:12:32 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000020B775ABB30>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:12:32 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000017A9F317F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:13:34 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000017A9F81BB30>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:13:34 RETURN - None 
+inner PARAMS - (<__main__.Founder object at 0x0000012D28447F10>, 'countries_info.txt') {} CALL DATETIME - 16/02/2021 23:14:17 RETURN - None 
+inner PARAMS - (<generator object founder at 0x0000012D2874BB30>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:14:17 RETURN - None 

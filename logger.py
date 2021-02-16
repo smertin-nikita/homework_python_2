@@ -1,4 +1,15 @@
+import time
 from datetime import datetime
+
+
+def print_runtime(func):
+    """ Выводит время выполнения функции. """
+    def inner(*args, **kwargs):
+        start_time = time.time()
+        result = func(*args, **kwargs)
+        print(f'{func.__name__} - {time.time() - start_time} seconds')
+        return result
+    return inner
 
 
 def log(file_path=None):
@@ -9,10 +20,10 @@ def log(file_path=None):
             result = func(*args)
             with open(file_path, 'a', encoding='utf-8') as f:
                 f.write(
-                    f'{func} '
-                    f'params: {args} {kwargs} '
-                    f'{datetime.today().strftime("%d-%m-%Y %H:%M:%S")} '
-                    f'return: {result} \n')
+                    f'{func.__name__} '
+                    f'PARAMS - {args} {kwargs} '
+                    f'CALL DATETIME - {datetime.today().strftime("%d/%m/%Y %H:%M:%S")} '
+                    f'RETURN - {result} \n')
             return result
         return inner
     return decorator

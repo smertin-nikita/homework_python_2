@@ -5,7 +5,7 @@ import time
 import ijson
 import json
 
-from logger import log
+from logger import log, print_runtime
 
 FILE_PATH = 'countries.json'
 
@@ -18,13 +18,16 @@ def founder(file_path):
     with open(file_path, encoding='utf-8') as f:
         objects = ijson.items(f, 'item.name.common')
         for item in objects:
-            yield {item: f"https://en.wikipedia.org/wiki/{item.replace(' ', '_')}"}
+            yield Founder.make_link(item)
 
 
 class Founder:
     """
     Класс итератора, который по каждой стране из файла countries.json ищет страницу из википедии
     """
+
+    WIKI_URL = 'https://en.wikipedia.org/wiki/'
+
     def __init__(self, file_path):
         self.file_path = file_path
         with open(file_path, encoding='utf-8') as f:
@@ -33,9 +36,13 @@ class Founder:
     def __iter__(self):
         return self
 
+    @classmethod
+    def make_link(cls, country):
+        return {country: f"{cls.WIKI_URL}{country.replace(' ', '_')}"}
+
     def __next__(self):
         country = next(self.countries)['name']['common']
-        return {country: f"https://en.wikipedia.org/wiki/{country.replace(' ', '_')}"}
+        return self.make_link(country)
 
 
 def get_hash(file_path):
@@ -49,6 +56,7 @@ def get_hash(file_path):
 
 
 @log('log.txt')
+@print_runtime
 def write_to_file(iterable, file_path):
     with open(file_path, 'w', encoding='utf-8') as f:
         for item in iterable:
@@ -56,17 +64,10 @@ def write_to_file(iterable, file_path):
 
 
 if __name__ == '__main__':
-    start_time = time.time()
+
     write_to_file(Founder(FILE_PATH), 'countries_info.txt')
-    founder_class_time = time.time() - start_time
-
-    start_time = time.time()
     write_to_file(founder(FILE_PATH), 'countries_info_2.txt')
-    founder_time = time.time() - start_time
 
-    # Замерил скорость выполнения
-    print(f"class time = {founder_class_time}")
-    print(f"gen time = {founder_time}")
 
     # Вывести hash md5 строк
     # for hash in get_hash('countries_info.txt'):
