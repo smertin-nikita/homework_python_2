@@ -9,7 +9,10 @@ def print_runtime(func):
     def inner(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
-        print(f'{func.__name__} - {time.time() - start_time} seconds')
+        print(
+            f'{func.__name__} - '
+            f'{args} {kwargs} = '
+            f'{time.time() - start_time} seconds')
         return result
     return inner
 

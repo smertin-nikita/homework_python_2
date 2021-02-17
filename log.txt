@@ -54,3 +54,11 @@ inner PARAMS - (<__main__.Founder object at 0x0000012D28447F10>, 'countries_info
 inner PARAMS - (<generator object founder at 0x0000012D2874BB30>, 'countries_info_2.txt') {} CALL DATETIME - 16/02/2021 23:14:17 RETURN - None 
 write_to_file PARAMS - (<__main__.Founder object at 0x00000212244B5048>, 'countries_info.txt') {} CALL DATETIME - 17/02/2021 09:18:41 RETURN - None 
 write_to_file PARAMS - (<generator object founder at 0x0000021224744B48>, 'countries_info_2.txt') {} CALL DATETIME - 17/02/2021 09:18:41 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x000001549C514F88>, 'countries_info.txt') {} CALL DATETIME - 17/02/2021 10:30:48 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x000001549C799B48>, 'countries_info_2.txt') {} CALL DATETIME - 17/02/2021 10:30:48 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x0000013FA23C4F48>, 'countries_info.txt') {} CALL DATETIME - 17/02/2021 10:33:23 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x0000013FA2674B48>, 'countries_info_2.txt') {} CALL DATETIME - 17/02/2021 10:33:23 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x000002CEF6C84F88>, 'countries_info.txt') {} CALL DATETIME - 17/02/2021 10:33:41 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x000002CEF6F14B48>, 'countries_info_2.txt') {} CALL DATETIME - 17/02/2021 10:33:41 RETURN - None 
+write_to_file PARAMS - (<__main__.Founder object at 0x00000148BDAA4F48>, 'countries_info.txt') {} CALL DATETIME - 17/02/2021 10:34:56 RETURN - None 
+write_to_file PARAMS - (<generator object founder at 0x00000148BDD29B48>, 'countries_info_2.txt') {} CALL DATETIME - 17/02/2021 10:34:56 RETURN - None 
