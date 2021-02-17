@@ -1,9 +1,11 @@
+import functools
 import time
 from datetime import datetime
 
 
 def print_runtime(func):
     """ Выводит время выполнения функции. """
+    @functools.wraps(func)
     def inner(*args, **kwargs):
         start_time = time.time()
         result = func(*args, **kwargs)
@@ -16,6 +18,7 @@ def log(file_path=None):
     file_path = file_path or 'log.txt'
 
     def decorator(func):
+        @functools.wraps(func)
         def inner(*args, **kwargs):
             result = func(*args)
             with open(file_path, 'a', encoding='utf-8') as f:

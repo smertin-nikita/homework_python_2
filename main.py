@@ -1,6 +1,4 @@
 import hashlib
-import sys
-import time
 
 import ijson
 import json
